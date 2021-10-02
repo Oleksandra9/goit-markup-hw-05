@@ -280,13 +280,14 @@ img {
 
 .works-item {
   margin-right: 30px;
-
-  position: relative;
 }
 .works-item:nth-last-child(3n + 1) {
   margin-right: 0px;
 }
 
+.works-item-thumb {
+  position: relative;
+}
 .works-text-box {
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
