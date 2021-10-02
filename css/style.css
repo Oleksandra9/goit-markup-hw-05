@@ -116,6 +116,7 @@ img {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
+
 .current {
   color: var(--accent-color);
 }
@@ -287,6 +288,10 @@ img {
 
 .works-item-thumb {
   position: relative;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .works-text-box {
   background-color: rgba(47, 48, 58, 0.8);
@@ -298,6 +303,8 @@ img {
   position: absolute;
   margin: 0px;
   bottom: 0px;
+
+  /* opacity: 0; */
 }
 
 .works-title {
@@ -311,6 +318,10 @@ img {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke: 1px black;
 }
+
+/* .opacity:hover .works-text-box {
+  opacity: 1;
+} */
 
 /* -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px; */
@@ -339,7 +350,7 @@ img {
 
 .team-item-box {
   margin-top: 30px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 .team-title {
   font-weight: 500;
@@ -355,6 +366,7 @@ img {
 .team-text {
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 16px;
 
   text-align: center;
 }
@@ -363,7 +375,7 @@ img {
 .icon-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+
   align-items: center;
 }
 
@@ -379,7 +391,9 @@ img {
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
-  padding: 12px;
+
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .icon-item:nth-last-child(4n + 1) {
@@ -398,7 +412,6 @@ img {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
 }
 
 .partners-item {
@@ -412,10 +425,10 @@ img {
 .partners-link {
   display: flex;
   fill: var(--icon-color);
-  padding: 16px 31px;
+  width: 170px;
+  height: 92px;
   justify-content: center;
   align-items: center;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -489,7 +502,12 @@ img {
 }
 .icon-link-footer {
   display: flex;
-  padding: 12px;
+  /* padding: 12px; */
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
   fill: var(--main-white-color);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -583,7 +601,6 @@ img {
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
