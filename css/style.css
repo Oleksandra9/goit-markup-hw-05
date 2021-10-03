@@ -8,6 +8,9 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
+
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-duration: 250ms;
 }
 body {
   background-color: var(--main-white-color);
@@ -617,7 +620,39 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
+
+  opacity: 1;
 }
+
+.portfolio-link {
+  position: relative;
+}
+.window {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  width: 370px;
+  height: 294px;
+  color: var(--main-white-color);
+  font-size: 18px;
+  line-height: 1.5;
+
+  bottom: 110px;
+  left: 0px;
+  opacity: 0;
+
+  transition: opacity var(--transition-duration)
+    var(--animation-timing-function);
+}
+
+/* .window-text {
+  position: absolute;
+  color: var(--main-white-color);
+  font-size: 18px;
+  line-height: 1.5;
+
+  top: 20px;
+} */
 /* -----------------MODAL--------------- */
 
 .backdrop {
