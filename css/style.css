@@ -113,9 +113,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--animation-timing-function);
+  transition: color var(--transition-duration) var(--animation-timing-function);
 }
 .nav-link:hover,
 .nav-link:focus,
