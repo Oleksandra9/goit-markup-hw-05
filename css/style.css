@@ -636,7 +636,8 @@ img {
     1px 4px 6px rgb(0 0 0 / 16%);
 }
 
-.portfolio-link:hover .window {
+.portfolio-link:hover .window,
+.portfolio-link:focus .window {
   transform: translateY(0%);
 }
 
